@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>警告弹窗处理</title>
+</head>
+<body>
+<h1>
+    警告弹窗处理
+</h1>
+<button id="alertBtn">
+    alert弹窗
+</button>
+<button id="promptBtn">
+    prompt弹窗
+</button>
+<button id="confirmBtn">
+    confirm弹窗
+</button>
+</body>
+<script>
+    window.document.getElementById("alertBtn").addEventListener("click", function() {
+        alert("alert弹窗");
+    });
+    window.document.getElementById("promptBtn").addEventListener("click", function() {
+        let pro = prompt("prompt弹窗");
+        alert(pro);
+    });
+    window.document.getElementById("confirmBtn").addEventListener("click", function() {
+        confirm("confirm弹窗");
+    });
+</script>
+</html>
